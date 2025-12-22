@@ -1,0 +1,73 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "user", "type": "address" },
+      { "indexed": true, "internalType": "uint256", "name": "auditId", "type": "uint256" },
+      { "indexed": false, "internalType": "string", "name": "contractName", "type": "string" },
+      { "indexed": false, "internalType": "string", "name": "summary", "type": "string" },
+      { "indexed": false, "internalType": "string", "name": "txHash", "type": "string" }
+    ],
+    "name": "AuditSubmitted",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "name": "auditHistory",
+    "outputs": [
+      { "internalType": "address", "name": "user", "type": "address" },
+      { "internalType": "uint256", "name": "timestamp", "type": "uint256" },
+      { "internalType": "string", "name": "contractName", "type": "string" },
+      { "internalType": "string", "name": "summary", "type": "string" },
+      { "internalType": "string", "name": "txHash", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_id", "type": "uint256" }
+    ],
+    "name": "getAudit",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "user", "type": "address" },
+          { "internalType": "uint256", "name": "timestamp", "type": "uint256" },
+          { "internalType": "string", "name": "contractName", "type": "string" },
+          { "internalType": "string", "name": "summary", "type": "string" },
+          { "internalType": "string", "name": "txHash", "type": "string" }
+        ],
+        "internalType": "struct AuditRecord.AuditEntry",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalAudits",
+    "outputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_contractName", "type": "string" },
+      { "internalType": "string", "name": "_summary", "type": "string" },
+      { "internalType": "string", "name": "_txHash", "type": "string" }
+    ],
+    "name": "submitAudit",
+    "outputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
