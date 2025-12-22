@@ -134,7 +134,6 @@ The system consists of four main components and **must be executed in the correc
 
 ### 1️⃣ Start the Local Blockchain (Hardhat Node)
 
-```bash
 cd C:\Users\MONSTER\Desktop\AI-Smart-Contract-Auditor\smart-contract
 npx hardhat node
 
@@ -144,7 +143,7 @@ http://127.0.0.1:8545
 
 ⚠️ Keep this terminal open while running the project.
 
-2️⃣ Deploy the Smart Contract
+### 2️⃣ Deploy the Smart Contract
 
 cd C:\Users\MONSTER\Desktop\AI-Smart-Contract-Auditor\smart-contract
 npx hardhat run scripts/deploy.js --network localhost
@@ -153,7 +152,7 @@ This step deploys the AuditRecord.sol smart contract.
 
 📌 Copy the deployed contract address and place it into the backend .env file.
 
-3️⃣ Backend Setup & Execution
+### 3️⃣ Backend Setup & Execution
 
 cd C:\Users\MONSTER\Desktop\AI-Smart-Contract-Auditor\backend
 pip install -r requirements.txt
@@ -174,7 +173,7 @@ Backend API will be available at:
 
 http://127.0.0.1:8000
 
-4️⃣ Frontend Setup & Execution
+### 4️⃣ Frontend Setup & Execution
 cd C:\Users\MONSTER\Desktop\AI-Smart-Contract-Auditor\frontend
 npm install
 npm run dev
@@ -184,7 +183,7 @@ Frontend will be available at:
 
 http://localhost:5173
 
-🧪 Example Solidity Contracts for Testing
+### 🧪 Example Solidity Contracts for Testing
 Example 1: Educational Overflow Case
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -222,7 +221,7 @@ contract BrokenAdmin {
     }
 }
 
-🧪 Testing
+### 🧪 Testing
 
 Testing was performed in a local development environment:
 
@@ -235,19 +234,24 @@ Solidity input → AI analysis → blockchain transaction → audit history retr
 
 Automated test coverage is limited and can be extended in future work.
 
-🎬 Demo
+### 🎬 Demo
 
 📹 Demo Video (Google Drive):
 https://drive.google.com/drive/folders/12jqVp-6kpRDX6YZFhMYLD8FMJeM0ndYf?usp=drive_link
 
 🧪 Live Demo: Local environment (Hardhat + FastAPI + React)
 
-🖼️ Screenshots
+### 🖼️ Screenshots
 
 📁 Screenshots (Google Drive Folder):
 https://drive.google.com/drive/folders/1F-VOG1h64bFH9m0_tjAPk8Teg8Y0iUHt?usp=drive_link
 
-📄 Academic Context
+### 🔗 Source Code
+
+GitHub Repository:  
+👉 https://github.com/Hardware38/AI-Smart-Contract-Auditor
+
+### 📄 Academic Context
 
 This project was developed as part of:
 
@@ -255,7 +259,7 @@ SEN0401 – Special Topics in Software Engineering (Blockchain)
 Instructor: Yusuf Altunel
 Istanbul Kültür University
 
-👥 Team Members
+### 👥 Team Members
 
 Furkan Soykan – 2200004410
 
@@ -263,7 +267,7 @@ Göksu Bakır – 2100003985
 
 Berat Öztürk – 2100005789
 
-📌 Notes
+### 📌 Notes
 
 The .env file is intentionally excluded for security reasons
 All blockchain operations are performed on a local test network
